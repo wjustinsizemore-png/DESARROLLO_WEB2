@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Indica el tipo de documento HTML5 -->
+    <meta charset="UTF-8">
+
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Corina Pérez - Grupo 6</title>
+
+    <!-- CSS INTERNO:
+         Todo el diseño de la página se encuentra aquí para cumplir
+         con el requisito de utilizar hojas de estilo internas. -->
+    <style>
+
+        /* Estilo general de la página.
+           Se define el color de fondo y el tipo de letra que
+           utilizará todo el contenido. */
+        body{
+            background-color: #D6EAF8;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Diseño del título principal */
+        h1{
+            text-align: center;
+            color: #154360;
+            background-color: #AED6F1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Diseño para los subtítulos */
+        h2{
+            color: #1B4F72;
+        }
+
+        h3{
+            color: #21618C;
+        }
+
+        /* Diseño para los párrafos */
+        p{
+            text-align: justify;
+            color: #2C3E50;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Clase utilizada para centrar y dimensionar la imagen */
+        .imagen{
+            display: block;
+            margin: auto;
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Diseño de la tabla */
+        table{
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        /* Encabezados de la tabla */
+        th{
+            background-color: #85C1E9;
+            color: black;
+        }
+
+        /* Bordes y espacios internos */
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Color normal del enlace */
+        a{
+            color: deepskyblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Efecto al colocar el mouse sobre el enlace */
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Pie de página */
+        footer{
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--titulo principal de la pagina web. -->
+    <h1>Corina Pérez</h1>
+
+    <!-- subtitulo de la pagina que presenta el tema de la misma-->
+    <h2 align="center">Aspirante a la Rectoría de la Universidad de Panamá</h2>
+
+    <!-- Parrafo que describe de manera general quién es la candidata y algunos
+         aspectos relacionados con su propuesta para la universidad. -->
+    <p>
+        Corina Pérez es una de las candidatas a Rectora de la Universidad de Panamá.
+        Su visión se enfoca en fortalecer la calidad académica, impulsar el uso de
+        herramientas tecnológicas en la educación superior y promover una gestión
+        universitaria más eficiente y participativa. Su propuesta busca mejorar los
+        servicios ofrecidos a estudiantes, docentes y administrativos, fomentando
+        además la investigación científica, la innovación y el desarrollo profesional
+        dentro de la comunidad universitaria.
+    </p>
+
+    <!--imagen utilizada referente al tema, la misma tiene dimensiones definidas para que
+         tenga una mejor presentación dentro de la página web. -->
+    <p align="center">
+        <img src="https://upinforma.com/nuevo/images/noticias/374667880corinaperez.jpg"
+        alt="Corina Pérez"
+        class="imagen">
+    </p>
+
+    <!-- Un subtitulo con las propuestas de la candidata -->
+    <h2>Principales Propuestas</h2>
+
+    <p>
+        A continuación se muestran algunas de las propuestas que forman parte
+        de la visión de trabajo de la candidata y que buscan contribuir al
+        fortalecimiento de la Universidad de Panamá.
+    </p>
+
+    <!-- Tabla que contiene dos propuestas principales y una breve descripción
+         de cada una de ellas. -->
+    <table>
+
+        <tr>
+            <th>Propuesta</th>
+            <th>Descripción</th>
+        </tr>
+
+        <tr>
+            <td>Modernización Tecnológica</td>
+            <td>
+                Implementar nuevas plataformas digitales para agilizar
+                procesos académicos y administrativos.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Fortalecimiento Académico</td>
+            <td>
+                Promover la capacitación continua de docentes y el
+                desarrollo de proyectos de investigación.
+            </td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!--Un enlace interno, este enlace abrirá en la misma pestaña debido a que
+         no se utiliza target="_blank".-->
+    <p align="center">
+        <a href="https://upinforma.com/nuevo/info.php?cat=noticias&id=11045">
+            Visita la página de noticias UP Informa.
+        </a>
+    </p>
+
+    <!--Mi lista ordenada de los integrantes del Grupo 6 mediante una lista numerada.-->
+    <h3>Integrantes del Grupo 6</h3>
+
+    <ol>
+        <li>Wesley Rivera</li>
+        <li>Dalis Sanchez</li>
+        <li>Byron Santos</li>
+        <li>Manuel Tello</li>
+        <li>Jesús Vasquez</li>
+        <li>Estrella Vergara</li>
+        <li>Walker Sizemore</li>
+    </ol>
+
+    <!--El pie de pagina me permite identificar a quien pertenece el desarrollo o 
+          creación de la estructura del sitio web.-->
+    <footer>
+    <p>Grupo 6 DAW-Estrella Vergara</p>
+    </footer>
+
+</body>
+</html>
