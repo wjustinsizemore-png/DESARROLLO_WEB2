@@ -1,0 +1,117 @@
+/* ===========================
+   estilo general
+=========================== */
+
+body{
+
+    background-image: url("ChatGPT Image 6 jul 2026, 12_44_34 p.m..png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    margin-top: 100px;
+
+    margin-right: 300px;
+
+    margin-bottom: 150px;
+
+    margin-left: 300px;
+
+}
+
+/* Punto 9.1 */
+
+h1{
+
+    font-family: "Bebas Neue", sans-serif;
+    
+    font-size: 100px;
+
+    text-align:center;
+
+    color: rgb(0, 72, 0);
+
+
+}
+
+h2{
+
+    color:#003366;
+
+}
+
+/* Punto 5 */
+
+.parrafo{
+
+    text-align:justify;
+    line-height:1.8;
+
+}
+
+/* Tabla */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+table,
+th,
+td{
+
+    border:1px solid black;
+
+}
+
+th{
+
+    background:#dceeff;
+
+}
+
+td{
+
+    text-align:center;
+    padding:10px;
+
+}
+
+/* Punto 9.3 */
+
+a{
+
+    text-decoration:none;
+    color:blue;
+    font-weight:bold;
+
+}
+
+a:hover{
+
+    color:red;
+    text-decoration:underline;
+    transition:0.3s;
+
+}
+
+footer{
+
+    margin-top:40px;
+
+    margin-right: 300px;
+
+    margin-bottom: 150px;
+
+    margin-left: 300px;
+
+    text-align:center;
+
+}
