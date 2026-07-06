@@ -25,10 +25,11 @@ body{
 }
 
 video{
+       display: block;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
     pointer-events: none;
-   align:center;
 }
 
 /* Punto 9.1 */
