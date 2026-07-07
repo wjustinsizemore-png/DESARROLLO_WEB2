@@ -123,3 +123,39 @@ footer{
     text-align:center;
 
 }
+
+@media (max-width: 768px){
+
+    body{
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    video{
+        width:100%;
+        height:auto;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:55px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    footer{
+        margin:40px 20px;
+    }
+}
