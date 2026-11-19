@@ -22,7 +22,8 @@ nav a:hover { color: #ff73a2; text-decoration: underline; }
 .portada p { max-width: 520px; }
 figure { margin: 0; }
 figure img { width: 100%; height: auto; border-radius: 8px; }
-figcaption { padding: 8px; color: #000000; font-size: 14px; }
+figcaption { padding: 8px; color: #eee; font-size: 14px; }
+.claro figcaption { color: #333; }
 .introduccion { max-width: 850px; margin: 0 auto; padding: 35px 25px 65px; text-align: center; }
 .introduccion p { color: #eee; }
 .seccion { padding: 55px 8%; }
