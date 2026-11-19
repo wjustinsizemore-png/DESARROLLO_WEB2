@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página educativa del Grupo 1 sobre ciberseguridad.">
+  <title data-es="Grupo 1 | Ciberseguridad" data-en="Group 1 | Cybersecurity">Grupo 1 | Ciberseguridad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido" data-es="Saltar al contenido" data-en="Skip to content">Saltar al contenido</a>
+
+  <header>
+    <a class="marca" href="#inicio" aria-label="Grupo 1, inicio">
+      <span aria-hidden="true">🍄</span><span aria-hidden="true">🛡</span>
+      <span>Grupo 1</span>
+    </a>
+    <button id="boton-menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    <nav id="menu" aria-label="Menú principal">
+      <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+      <a href="#mision" data-es="Misión" data-en="Mission">Misión</a>
+      <a href="#amenazas" data-es="Amenazas" data-en="Threats">Amenazas</a>
+      <a href="#proteccion" data-es="Protección" data-en="Protection">Protección</a>
+      <a href="#juego" data-es="Minijuego" data-en="Mini game">Minijuego</a>
+      <a href="#fuentes" data-es="Fuentes" data-en="Sources">Fuentes</a>
+      <button id="idioma" type="button" aria-label="Cambiar a inglés">EN</button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="portada">
+      <div>
+        <p class="etiqueta" data-es="UNIVERSIDAD DE PANAMÁ · GRUPO 1" data-en="UNIVERSITY OF PANAMA · GROUP 1">UNIVERSIDAD DE PANAMÁ · GRUPO 1</p>
+        <h1><span data-es="Ciberseguridad" data-en="Cybersecurity">Ciberseguridad</span><br><small>Grupo 1</small></h1>
+        <p data-es="Aprende formas sencillas de cuidar tus cuentas, dispositivos y datos cuando estás en internet." data-en="Learn simple ways to protect your accounts, devices, and data online.">Aprende formas sencillas de cuidar tus cuentas, dispositivos y datos cuando estás en internet.</p>
+        <a class="boton" href="#mision" data-es="Conocer el proyecto" data-en="About the project">Conocer el proyecto</a>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+             width="1000" height="700"
+             alt="Circuitos que representan una red digital protegida."
+             data-es-alt="Circuitos que representan una red digital protegida."
+             data-en-alt="Circuit boards representing a protected digital network.">
+        <figcaption data-es="La ciberseguridad empieza con buenos hábitos." data-en="Cybersecurity starts with good habits.">La ciberseguridad empieza con buenos hábitos.</figcaption>
+      </figure>
+    </section>
+
+    <section class="introduccion">
+      <h2 data-es="¿Qué es la ciberseguridad?" data-en="What is cybersecurity?">¿Qué es la ciberseguridad?</h2>
+      <p data-es="La ciberseguridad consiste en proteger computadoras, teléfonos, cuentas y datos de riesgos en línea. También depende de las decisiones que tomamos cada día. Revisar un enlace antes de abrirlo y usar contraseñas seguras son ejemplos sencillos." data-en="Cybersecurity means protecting computers, phones, accounts, and data from online risks. It also depends on the choices we make every day. Checking a link before opening it and using strong passwords are simple examples.">La ciberseguridad consiste en proteger computadoras, teléfonos, cuentas y datos de riesgos en línea. También depende de las decisiones que tomamos cada día. Revisar un enlace antes de abrirlo y usar contraseñas seguras son ejemplos sencillos.</p>
+    </section>
+
+    <section id="mision" class="seccion">
+      <h2 data-es="Nuestra misión" data-en="Our mission">Nuestra misión</h2>
+      <p data-es="El objetivo de esta página es explicar conceptos básicos de ciberseguridad con ejemplos fáciles de entender. Queremos que los estudiantes aprendan a reconocer mensajes sospechosos y a proteger su información personal." data-en="This page explains basic cybersecurity ideas with simple examples. We want students to learn to recognize suspicious messages and protect their personal information.">El objetivo de esta página es explicar conceptos básicos de ciberseguridad con ejemplos fáciles de entender. Queremos que los estudiantes aprendan a reconocer mensajes sospechosos y a proteger su información personal.</p>
+      <div class="tarjetas">
+        <article><h3 data-es="Prevenir" data-en="Prevent">Prevenir</h3><p data-es="Aprender a reconocer riesgos antes de hacer clic." data-en="Learn to spot risks before clicking.">Aprender a reconocer riesgos antes de hacer clic.</p></article>
+        <article><h3 data-es="Proteger" data-en="Protect">Proteger</h3><p data-es="Cuidar nuestras cuentas y dispositivos." data-en="Take care of our accounts and devices.">Cuidar nuestras cuentas y dispositivos.</p></article>
+      </div>
+    </section>
+
+    <section id="amenazas" class="seccion claro">
+      <h2 data-es="Amenazas comunes" data-en="Common threats">Amenazas comunes</h2>
+      <p data-es="Conocer algunas amenazas ayuda a tomar mejores decisiones en internet." data-en="Knowing about common threats helps us make better choices online.">Conocer algunas amenazas ayuda a tomar mejores decisiones en internet.</p>
+      <div class="tarjetas">
+        <article><h3>Phishing</h3><p data-es="Mensajes falsos que intentan robar contraseñas o datos personales. A menudo usan urgencia para que respondas rápido." data-en="Fake messages that try to steal passwords or personal data. They often create urgency so you respond quickly.">Mensajes falsos que intentan robar contraseñas o datos personales. A menudo usan urgencia para que respondas rápido.</p></article>
+        <article><h3>Malware</h3><p data-es="Programas dañinos que pueden afectar el funcionamiento de un dispositivo o acceder a sus archivos." data-en="Harmful programs that can affect a device or access its files.">Programas dañinos que pueden afectar el funcionamiento de un dispositivo o acceder a sus archivos.</p></article>
+        <article><h3 data-es="Suplantación" data-en="Impersonation">Suplantación</h3><p data-es="Alguien se hace pasar por una persona o empresa para pedir información o dinero." data-en="Someone pretends to be a person or company to ask for information or money.">Alguien se hace pasar por una persona o empresa para pedir información o dinero.</p></article>
+      </div>
+      <p><a class="boton" href="https://www.incibe.es/aprendeciberseguridad/phishing" target="_blank" rel="noopener noreferrer" title="Abre la guía de phishing de INCIBE en otra pestaña." data-es="Leer la guía de phishing de INCIBE" data-en="Read INCIBE's phishing guide">Leer la guía de phishing de INCIBE</a></p>
+    </section>
+
+    <section id="proteccion" class="seccion">
+      <h2 data-es="Cómo protegerte" data-en="How to protect yourself">Cómo protegerte</h2>
+      <ol class="lista">
+        <li data-es="Usa contraseñas largas y diferentes para cada cuenta." data-en="Use long, different passwords for each account.">Usa contraseñas largas y diferentes para cada cuenta.</li>
+        <li data-es="Activa la verificación en dos pasos cuando esté disponible." data-en="Turn on two-step verification when it is available.">Activa la verificación en dos pasos cuando esté disponible.</li>
+        <li data-es="Actualiza el sistema operativo y las aplicaciones." data-en="Update your operating system and apps.">Actualiza el sistema operativo y las aplicaciones.</li>
+        <li data-es="No abras enlaces o archivos de mensajes inesperados." data-en="Do not open links or files in unexpected messages.">No abras enlaces o archivos de mensajes inesperados.</li>
+        <li data-es="Haz copias de seguridad de tus archivos importantes." data-en="Back up your important files.">Haz copias de seguridad de tus archivos importantes.</li>
+      </ol>
+      <p><a class="boton" href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer" title="Abre consejos de seguridad de CISA en otra pestaña." data-es="Más consejos en CISA" data-en="More tips from CISA">Más consejos en CISA</a></p>
+    </section>
+
+    <section class="seccion claro">
+      <h2 data-es="Galería de ciberseguridad" data-en="Cybersecurity gallery">Galería de ciberseguridad</h2>
+      <figure class="galeria">
+        <img id="foto" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+             width="1000" height="650" alt="Persona trabajando con una computadora portátil."
+             data-es-alt="Persona trabajando con una computadora portátil."
+             data-en-alt="Person working at a laptop.">
+        <figcaption id="pie-foto" data-es="Usa tus dispositivos con atención." data-en="Use your devices thoughtfully.">Usa tus dispositivos con atención.</figcaption>
+      </figure>
+      <div class="controles">
+        <button id="anterior" type="button" aria-label="Foto anterior" data-es="Foto anterior" data-en="Previous photo">Foto anterior</button>
+        <span id="numero-foto" aria-live="polite">1 / 3</span>
+        <button id="siguiente" type="button" aria-label="Foto siguiente" data-es="Foto siguiente" data-en="Next photo">Foto siguiente</button>
+      </div>
+    </section>
+
+    <section id="juego" class="seccion">
+      <h2 data-es="Minijuego: ¿qué harías?" data-en="Mini game: what would you do?">Minijuego: ¿qué harías?</h2>
+      <p data-es="Lee cada mensaje y elige la respuesta más segura." data-en="Read each message and choose the safest response.">Lee cada mensaje y elige la respuesta más segura.</p>
+      <div id="contenido-juego" class="juego" aria-live="polite">
+        <p data-es="Practica cómo reconocer mensajes sospechosos." data-en="Practice spotting suspicious messages.">Practica cómo reconocer mensajes sospechosos.</p>
+        <button id="empezar" class="boton" type="button" data-es="Empezar" data-en="Start">Empezar</button>
+      </div>
+    </section>
+
+    <section class="seccion claro">
+      <h2 data-es="Grupo 1" data-en="Group 1">Grupo 1</h2>
+      <div class="tabla-contenedor">
+        <table>
+          <caption data-es="Integrantes del grupo" data-en="Group members">Integrantes del grupo</caption>
+
+          <thead>
+            <tr>
+              <th data-es="Nombre" data-en="First name">Nombre</th>
+              <th data-es="Apellido" data-en="Last name">Apellido</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Walker</td><td>Sizemore</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="fuentes" class="seccion">
+      <h2 data-es="Fuentes y autoría" data-en="Sources and authorship">Fuentes y autoría</h2>
+      <ul class="fuentes">
+        <li><a class="boton" href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer" title="Abre el sitio de CISA en otra pestaña." data-es="CISA: Secure Our World ↗" data-en="CISA: Secure Our World ↗">CISA: Secure Our World ↗</a></li>
+        <li><a class="boton" href="https://www.incibe.es/aprendeciberseguridad/phishing" target="_blank" rel="noopener noreferrer" title="Abre el sitio de INCIBE en otra pestaña." data-es="INCIBE: phishing ↗" data-en="INCIBE: phishing ↗">INCIBE: phishing ↗</a></li>
+        <li><a class="boton" href="https://owasp.org/projects/top-ten?lang=en" target="_blank" rel="noopener noreferrer" title="Abre OWASP Top 10 en otra pestaña." data-es="OWASP: seguridad web ↗" data-en="OWASP: web security ↗">OWASP: seguridad web ↗</a></li>
+        <li><a class="boton" href="https://unsplash.com" target="_blank" rel="noopener noreferrer" title="Abre Unsplash en otra pestaña." data-es="Fotografías: Unsplash ↗" data-en="Photos: Unsplash ↗">Fotografías: Unsplash ↗</a></li>
+      </ul>
+      <div class="autor">
+        <h3 data-es="Autor y editor" data-en="Author and editor">Autor y editor</h3>
+        <p>Walker Sizemore</p>
+        <p data-es="Universidad de Panamá · Diseño Gráfico de Interface Web" data-en="University of Panama · Web Interface Graphic Design">Universidad de Panamá · Diseño Gráfico de Interface Web</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Grupo 1 · Universidad de Panamá</p>
+  </footer>
+  <button id="arriba" type="button" aria-label="Volver arriba" data-es="↑ Volver arriba" data-en="↑ Back to top">↑ Volver arriba</button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
