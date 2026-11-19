@@ -1,8 +1,7 @@
 $(document).ready(function () {
   var idioma = "es";
-
+  var reducirMovimiento = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   $("#boton-menu").click(function () {
-    
     $("#menu").toggleClass("mostrar");
     var abierto = $("#menu").hasClass("mostrar");
     $("#boton-menu").attr("aria-expanded", abierto);
@@ -10,9 +9,7 @@ $(document).ready(function () {
       ? (idioma === "es" ? "Cerrar menú" : "Close menu")
       : (idioma === "es" ? "Abrir menú" : "Open menu"));
   });
-
   $("#menu a").click(function () {
-
     var destino = $(this).attr("href");
     $("#menu").removeClass("mostrar");
     $("#boton-menu").attr("aria-expanded", "false");
@@ -22,21 +19,17 @@ $(document).ready(function () {
   });
 
   $("#idioma").click(function () {
-
     idioma = idioma === "es" ? "en" : "es";
     $("html").attr("lang", idioma);
     $("[data-es][data-en]").each(function () {
       $(this).text($(this).attr("data-" + idioma));
     });
-
     $("[data-es-alt][data-en-alt]").each(function () {
       $(this).attr("alt", $(this).attr("data-" + idioma + "-alt"));
     });
-
     $("[data-es-title][data-en-title]").each(function () {
       $(this).attr("title", $(this).attr("data-" + idioma + "-title"));
     });
-
     $("#idioma").text(idioma === "es" ? "EN" : "ES");
     $("#idioma").attr("aria-label", idioma === "es" ? "Cambiar a inglés" : "Switch to Spanish");
     $("#arriba").attr("aria-label", idioma === "es" ? "Volver arriba" : "Back to top");
@@ -71,30 +64,27 @@ $(document).ready(function () {
       pieEn: "Check messages before responding."
     }
   ];
-
   var fotoActual = 0;
-
   function mostrarFoto() {
     $("#foto").attr("src", fotos[fotoActual].src);
     $("#foto").attr("alt", idioma === "es" ? fotos[fotoActual].es : fotos[fotoActual].en);
     $("#pie-foto").text(idioma === "es" ? fotos[fotoActual].pieEs : fotos[fotoActual].pieEn);
     $("#numero-foto").text((fotoActual + 1) + " / " + fotos.length);
   }
-
   $("#anterior").click(function () {
     fotoActual = (fotoActual - 1 + fotos.length) % fotos.length;
     mostrarFoto();
   });
-
   $("#siguiente").click(function () {
     fotoActual = (fotoActual + 1) % fotos.length;
     mostrarFoto();
   });
-
-  setInterval(function () {
-    fotoActual = (fotoActual + 1) % fotos.length;
-    mostrarFoto();
-  }, 6000);
+  if (!reducirMovimiento) {
+    setInterval(function () {
+      fotoActual = (fotoActual + 1) % fotos.length;
+      mostrarFoto();
+    }, 6000);
+  }
 
   var preguntas = [
     {
@@ -132,7 +122,6 @@ $(document).ready(function () {
   var terminado = false;
   var contestada = false;
   var seleccionada = -1;
-
   function empezarJuego() {
     preguntaActual = 0;
     puntaje = 0;
@@ -142,7 +131,6 @@ $(document).ready(function () {
     seleccionada = -1;
     mostrarPregunta();
   }
-
   function mostrarPregunta() {
     var pregunta = preguntas[preguntaActual];
     var opciones = idioma === "es" ? pregunta.opcionesEs : pregunta.opcionesEn;
@@ -155,7 +143,6 @@ $(document).ready(function () {
     $("#contenido-juego").html(html);
     if (contestada) mostrarRespuesta();
   }
-
   function responder(opcion) {
     if (contestada) return;
     contestada = true;
@@ -163,7 +150,6 @@ $(document).ready(function () {
     if (opcion === preguntas[preguntaActual].correcta) puntaje++;
     mostrarRespuesta();
   }
-
   function mostrarRespuesta() {
     var pregunta = preguntas[preguntaActual];
     var acierto = seleccionada === pregunta.correcta;
@@ -175,19 +161,16 @@ $(document).ready(function () {
     $("#respuesta").html("<p><strong>" + resultado + "</strong>" + texto + "</p><button id='continuar'>" +
       (idioma === "es" ? "Continuar" : "Continue") + "</button>");
   }
-
   function mostrarResultado() {
     var mensaje = idioma === "es" ? "Puntaje: " : "Score: ";
     $("#contenido-juego").html("<h3>" + (idioma === "es" ? "Juego terminado" : "Game complete") +
       "</h3><p>" + mensaje + puntaje + " / " + preguntas.length +
       "</p><button id='empezar'>" + (idioma === "es" ? "Jugar otra vez" : "Play again") + "</button>");
   }
-
   $("#contenido-juego").on("click", "#empezar", empezarJuego);
   $("#contenido-juego").on("click", ".opcion", function () {
     responder(Number($(this).attr("data-opcion")));
   });
-
   $("#contenido-juego").on("click", "#continuar", function () {
     preguntaActual++;
     if (preguntaActual === preguntas.length) {
@@ -200,14 +183,12 @@ $(document).ready(function () {
       mostrarPregunta();
     }
   });
-
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) $("#arriba").fadeIn();
     else $("#arriba").fadeOut();
   });
-
   $("#arriba").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 400);
+    if (reducirMovimiento) $("html, body").scrollTop(0);
+    else $("html, body").animate({ scrollTop: 0 }, 400);
   });
-
 });
